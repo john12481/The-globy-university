@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(9, 8, 8, 0.5),
+      rgba(7, 7, 7, 0.5)
+    ),
+    url("./images/university.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+nav h1 {
+  color: white;
+  font-size: 30px;
+}
+.navlinks li {
+  display: inline-block;
+  padding: 8px;
+}
+.navlinks li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: orangered;
+  transition: 0.5s ease;
+}
+.navlinks li:hover::after {
+  width: 100%;
+}
+.navlinks li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.hero-text h1 {
+  font-size: 30px;
+}
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.hero-text a {
+  border: 1px solid white;
+  padding: 10px;
+}
+.hero-text .btn {
+  cursor: pointer;
+}
+.hero-text a:hover {
+  background-color: orangered;
+  border-radius: 5px;
+  border: 2px solid orangered;
+  transition: 0.6s;
+}
+.menu {
+  color: white;
+  display: none;
+}
